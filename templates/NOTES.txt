@@ -17,3 +17,5 @@ To learn more about the release, try:
 
 This chart was compiled by Eli Pavlov
 (with the help of some of the finest coffee)
+
+*************************************
