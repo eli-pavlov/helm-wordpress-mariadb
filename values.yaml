@@ -1,4 +1,4 @@
-# Default values for helm-project.
+# Default values for helm-wordpress-mariadb.
 # This is a YAML-formatted file.
 
 mysqlTier: "mysql"
