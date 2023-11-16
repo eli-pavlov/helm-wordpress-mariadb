@@ -15,7 +15,7 @@ To learn more about the release, try:
   $ helm status {{ .Release.Name }}
   $ helm get all {{ .Release.Name }}
 
-This chart was compiled by Eli Pavlov
+This chart was compiled by Eli Pavlov.
 (with the help of some of the finest coffee)
 
 *************************************
