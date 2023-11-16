@@ -1,4 +1,4 @@
-# Default values for homeworkchart.
+# Default values for helm-project.
 # This is a YAML-formatted file.
 
 mysqlTier: "mysql"

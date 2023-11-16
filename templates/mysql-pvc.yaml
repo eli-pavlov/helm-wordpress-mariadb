@@ -3,11 +3,11 @@ kind: PersistentVolumeClaim
 metadata:
   name: mysql-pv-claim
   labels:
-    app: wordpress
+    app: {{ .Values.appName }}
 spec:
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 1.9Gi
+      storage: 2Gi
   storageClassName: mysql-storage-class

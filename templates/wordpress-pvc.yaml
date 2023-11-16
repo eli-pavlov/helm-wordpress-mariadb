@@ -3,11 +3,11 @@ kind: PersistentVolumeClaim
 metadata:
   name: wp-pv-claim
   labels:
-    app: wordpress
+    app: {{ .Values.appName }}
 spec:
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 1.9Gi
+      storage: 2Gi
   storageClassName: wordpress-storage-class

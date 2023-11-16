@@ -1,6 +1,6 @@
 apiVersion: v2
-name: homeworkchart
-description: A Helm chart for Wordpress with Mysql.
+name: helm-project
+description: A Helm chart of Wordpress with Mysql deployment.
 
 # A chart can be either an 'application' or a 'library' chart.
 #
