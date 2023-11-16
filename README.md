@@ -38,6 +38,7 @@
 ### :bangbang: Prerequisites
 
 - Tested on AWS EKS platform.
+- Not for production environment! For testing purposes only.
 - AWS Kubernetes cluster with "Helm" installed.
 - Hosted zone in "Route53" with domain for Wordpress server
 
