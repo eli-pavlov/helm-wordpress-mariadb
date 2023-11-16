@@ -9,4 +9,3 @@ data:
   WORDPRESS_DB_HOST: {{ .Values.wordpressDbhost }}
   WORDPRESS_DB_NAME: {{ .Values.mysqlDatabase}}
   WORDPRESS_DB_USER: {{ .Values.wordpressDbuser }}
-  
