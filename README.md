@@ -29,9 +29,6 @@
 <details> <summary>Database</summary> <ul>
 <li><a href="https://mariadb.org/">MariaDB</a></li>
 </ul> </details>
-<details> <summary>DevOps</summary> <ul>
-<li><a href="www.weblightenment.com">Eli Pavlov</a></li>
-</ul> </details>
 
 ## :toolbox: Getting Started
 
