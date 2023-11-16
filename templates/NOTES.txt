@@ -1,4 +1,4 @@
-
+#####################################
 "Wordpress" server has been deployed.
 
 To enable access from the internet:
@@ -8,3 +8,4 @@ To enable access from the internet:
 
 This chart was compiled by Eli Pavlov
 (with the help of some finest coffee)
+#####################################

@@ -7,7 +7,7 @@ metadata:
 spec:
   storageClassName: wordpress-storage-class
   capacity:
-    storage: 2Gi
+    storage: {{ .Values.wordpressvolumeSize }}
   accessModes:
     - ReadWriteOnce
   hostPath:
