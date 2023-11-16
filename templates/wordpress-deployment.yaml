@@ -24,10 +24,13 @@ spec:
         - name: WORDPRESS_DB_HOST  # CONFIGMAP REFERENCE
           valueFrom:
             configMapKeyRef:
-              name: homeworkchart-configmap
+              name: wordpress-configmap
               key: WORDPRESS_DB_HOST
         - name: WORDPRESS_DB_NAME  # CONFIGMAP REFERENCE
-          value: wordpress
+          valueFrom:
+            configMapKeyRef:
+              name: wordpress-configmap
+              key: WORDPRESS_DB_NAME
         - name: WORDPRESS_DB_PASSWORD  # SECRET REFERENCE
           valueFrom:
             secretKeyRef:
@@ -36,7 +39,7 @@ spec:
         - name: WORDPRESS_DB_USER  # CONFIGMAP REFERENCE
           valueFrom:
             configMapKeyRef:
-              name: homeworkchart-configmap
+              name: wordpress-configmap
               key: WORDPRESS_DB_USER
         - name: WORDPRESS_DEBUG
           value: "1"
