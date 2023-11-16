@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: homeworkchart-configmap
+  namespace: default
+  labels:
+    app: {{ .Values.appName }}
+data:
+  MYSQL_DATABASE: {{ .Values.mysqlDatabase }}
+  MYSQL_USER: {{ .Values.mysqlUser }}
+  WORDPRESS_DB_HOST: {{ .Values.wordpressDbhost }}
+  WORDPRESS_DB_USER: {{ .Values.wordpressDbuser }}

@@ -1,0 +1,24 @@
+# Default values for homeworkchart.
+# This is a YAML-formatted file.
+
+mysqlTier: "mysql"
+wpTier: "frontend"
+appName: "wordpress"
+
+mysqlImage: "mariadb"
+mysqlVolume: "mysql-persistent-storage"
+mysqlpersistentVolumeClaim: "mysql-pv-claim"
+mysqlMountpath: "/var/lib/mysql"
+mysqlPort: "3306"
+
+mysqlDatabase: "wordpress"
+mysqlUser: "root"
+
+wordpressDbhost: "wordpress-mysql"
+wordpressDbuser: "root"
+
+wordpressImage: "wordpress:6.2.1-apache"
+wordpressVolume: "wordpress-persistent-storage"
+wordpresspersistentVolumeClaim: "wp-pv-claim"
+wordpressMountpath: "/var/www/html"
+wordpressPort: "80"

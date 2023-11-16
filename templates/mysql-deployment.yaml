@@ -1,0 +1,52 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wordpress-mysql
+  labels:
+    app: {{ .Values.mysqlTier }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Values.mysqlTier }}
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.mysqlTier }}
+    spec:
+      containers:
+      - image: {{ .Values.mysqlImage }}
+        name: mysql
+        env:
+        - name: MARIADB_ROOT_PASSWORD #SECRET REFERENCE
+          valueFrom:
+            secretKeyRef:
+              name: mysql-pass
+              key: password
+        - name: MARIADB_DATABASE #CONFIGMAP REFERENCE
+          valueFrom:
+            configMapKeyRef:
+              name: homeworkchart-configmap
+              key: MYSQL_DATABASE
+        - name: MYSQL_USER #CONFIGMAP REFERENCE
+          valueFrom:
+            configMapKeyRef:
+              name: homeworkchart-configmap
+              key: MYSQL_USER
+        - name: MYSQL_PASSWORD #SECRET REFERENCE
+          valueFrom:
+            secretKeyRef:
+              name: mysql-pass
+              key: password
+        ports:
+        - containerPort: {{ .Values.mysqlPort }}
+          name: mysql
+        volumeMounts:
+        - name: {{ .Values.mysqlVolume }}
+          mountPath: {{ .Values.mysqlMountpath }}
+      volumes:
+      - name: {{ .Values.mysqlVolume }}
+        persistentVolumeClaim:
+          claimName: {{ .Values.mysqlpersistentVolumeClaim }}
