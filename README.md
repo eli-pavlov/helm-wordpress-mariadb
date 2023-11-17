@@ -31,7 +31,7 @@ Components:
 4. AWS CLI, Helm, Kubectl and EKSCTL installed.
 
 Notes:
-1. All relevant values are defined in values.yaml file.
+1. All relevant values are defined in the values.yaml file.
 2. For this project 2GB of disk space were defined for each service, for real use you would like to define 20GB+.
 3. The password for the database is Base64 encoded as Kubernetes secret.
 
