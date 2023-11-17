@@ -19,6 +19,24 @@
 
 
 ## :star2: About the Project
+The purpose of this project is to deploy a Wordpress server in the cloud as a microservice
+in an easy and automated way. It is not intended to be used in production environment since 
+many features like security, high availablity and scaling are absent in this release. 
+However it is a perfect base for a start or as a personal project.
+
+Components:
+1. Wordpress image.
+2. MariaDB image.
+3. Kubernetes cluster depoyed on AWS.
+4. AWS CLI, Helm, Kubectl and EKSCTL installed.
+
+Notes:
+1. All relevant values are defined in values.yaml file.
+2. For this project 2GB of disk space were defined for each service, for real use you would like to define 20GB+.
+3. The password for the database is Base64 encoded as Kubernetes secret.
+
+
+
 ### :space_invader: Tech Stack
 <details> <summary>Client</summary> <ul>
 <li><a href="https://wordpress.com/he/">WordPress</a></li>
