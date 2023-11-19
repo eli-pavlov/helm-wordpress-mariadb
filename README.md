@@ -54,7 +54,7 @@ However it is a perfect base for a start or as a personal project.
   ---
     **values.yaml:** Default configuration values for the Helm chart.
 
-    **secret.yaml:** Configuration file for storing MySQL database password as a Kubernetes secret, the password stored in Base64 format.
+    **secret.yaml:** Configuration file for storing MySQL database password as a Kubernetes secret, the password is stored in Base64 format.
 
     **NOTES.txt:** File with instructions to be shown after deployment.
 
