@@ -81,7 +81,7 @@ However it is a perfect base for a start or as a personal project.
 ---
 
 Notes:
-1. All relevant values are defined in the values.yaml file.
+1. All values for the configuration of the chart components are defined in the values.yaml file.
 2. For this project 2GB of disk space were defined for each service, for actual use you would like to define 20GB or more.
 3. The password for the database is Base64 encoded as a Kubernetes secret.
 
