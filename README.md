@@ -3,7 +3,7 @@
 <img src= "https://i0.wp.com/wordpress.org/files/2023/02/allversions.png?w=500&ssl=1" width=300 />
 
 <h1>Helm Wordpress chart</h1>
-<p>A Helm chart for the deployment of "Wordpress" server with "MariaDB" database as backend.</p>
+<p>A Helm chart for the deployment of "Wordpress" server with "MariaDB" database as a backend.</p>
 
 <h4> <span> · </span> <a href="https://github.com/eli-pavlov/helm-wordpress-mariadb/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/eli-pavlov/helm-wordpress-mariadb/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/eli-pavlov/helm-wordpress-mariadb/issues"> Request Feature </a> </h4>
 
