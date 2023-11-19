@@ -29,7 +29,7 @@ However it is a perfect base for a start or as a personal project.
 - **Chart.yaml:** Main chart file.
 - **LICENSE.txt:** License file.
 - **README.md:** Readme file formatted for Github, with information about the chart.
-- **templates:** Directory containing the chart template files. Press on the files below for description.
+- **templates:** Directory containing the chart template files, press on the file names below for description.
   <details> <summary>mysql-storage-class.yaml:</summary> <ul>
   - Defining a storage class which will we will use for the creation and assignment of MySQL persistent volume.
   </ul> </details>
