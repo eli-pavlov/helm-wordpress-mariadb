@@ -139,6 +139,6 @@ Project Link: [https://github.com/eli-pavlov/helm-wordpress-mariadb.git](https:/
 
 ## :gem: Acknowledgements
 
-
 - [Kubernetes.io Documentation](https://kubernetes.io/docs/tutorials/stateful-application/mysql-wordpress-persistent-volume/)
+- [Helm Documentation](https://v3.helm.sh/docs/chart_template_guide/)
 - [Awesome Github Readme File Generator](https://www.genreadme.cloud/)
