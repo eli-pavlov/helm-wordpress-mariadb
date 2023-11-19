@@ -110,20 +110,20 @@ Notes:
 
 ### :gear: Installation
 
-1. **Clone the repo:**
+1. **1. Clone the repo:**
 ```bash
 git clone https://github.com/eli-pavlov/helm-wordpress-mariadb.git
 ```
-2. **Install the chart using "Helm":**
+2. **2. Install the chart using "Helm":**
 ```bash
 helm install wordpress helm-wordpress-mariadb
 ```
 
-3. **Add an "A" record in the hosted zone pointing to "Alias" of the "wordpress" LoadBalancer service.**
+3. **3. Add an "A" record in the hosted zone pointing to "Alias" of the "wordpress" LoadBalancer service.**
 
-4. **Login to "Wordpress" and create your website.**
+4. **4. Login to "Wordpress" and create your website.**
 
-5. **Enjoy!!!**
+5. **5. Enjoy!!!**
 
 ## :warning: License
 
