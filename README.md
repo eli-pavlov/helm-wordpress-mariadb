@@ -25,8 +25,6 @@ many features like security, high availablity and scaling are absent in this rel
 However it is a perfect base for a start or as a personal project.
 
 
-This release is not intended for production environment, for testing purposes only.
-
 ## Chart architecture
 
 - **Chart.yaml:** Main chart file.
