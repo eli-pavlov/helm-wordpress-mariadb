@@ -24,8 +24,10 @@ in an easy and automated way. It is not intended to be used in production enviro
 many features like security, high availablity and scaling are absent in this release. 
 However it is a perfect base for a start or as a personal project.
 
-- Tested on AWS EKS platform.
-- Not for production environment! For testing purposes only.
+Tested on AWS EKS platform.  
+
+
+This release is not intended for production environment, use it for testing purposes only.
 
 ## Chart architecture
 
