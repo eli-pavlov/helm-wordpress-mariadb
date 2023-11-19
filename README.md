@@ -24,6 +24,62 @@ in an easy and automated way. It is not intended to be used in production enviro
 many features like security, high availablity and scaling are absent in this release. 
 However it is a perfect base for a start or as a personal project.
 
+## Chart architecture
+
+- **Chart.yaml:** Main chart file.
+- **LICENSE.txt:** License file.
+- **README.md:** Readme file formatted for Github, with information about the chart.
+- **templates:** Directory containing the chart template files. Press on the files below for description.
+  <details> <summary>mysql-storage-class.yaml:</summary> <ul>
+  - Defining a storage class which will we will use for the creation and assignment of MySQL persistent volume.
+  </ul> </details>
+    <details> <summary>mysql-pv.yaml::</summary> <ul>
+  -  Configuration file to create a Persistent Volume for MySQL to store the working directory in a persistent way.
+  </ul> </details>
+    <details> <summary>mysql-pvc.yaml:</summary> <ul>
+  - Configuration file to create a Persistent Volume Claim for MySQL, to claim the created above Persistent Volume.
+  </ul> </details>
+    <details> <summary>mysql-configmap.yaml:</summary> <ul>
+  - ConfigMap to define variables for MySQL deployment in a dynamic rather than a static way.
+  </ul> </details>
+    <details> <summary>mysql-deployment.yaml:</summary> <ul>
+  - Main configuration file for the deployment of MySQL database as a micro-service in kubernetes.
+  </ul> </details>
+    <details> <summary>mysql-service.yaml:</summary>** <ul>
+  - Configuration file to create a ClusterIP service for MySQL depoyment, so Wordpress can find it and connect to it.
+  </ul> </details>
+
+  ---
+    **values.yaml:** Default configuration values for the Helm chart.
+
+    **secret.yaml:** Configuration file for storing MySQL database password as a Kubernetes secret, the password stored in Base64 format.
+
+    **NOTES.txt:** File with instructions to be shown after deployment.
+
+  ---
+  <details> <summary>Wordpress-storage-class.yaml:</summary> <ul>
+  - Defining a storage class which will we will use for the creation and assignment of Wordpress persistent volume.
+  </ul> </details>
+    <details> <summary>Wordpress-pv.yaml::</summary> <ul>
+  -  Configuration file to create a Persistent Volume for Wordpress to store the working directory in a persistent way.
+  </ul> </details>
+    <details> <summary>Wordpress-pvc.yaml:</summary> <ul>
+  - Configuration file to create a Persistent Volume Claim for Wordpress, to claim the created above Persistent Volume.
+  </ul> </details>
+    <details> <summary>Wordpress-configmap.yaml:</summary> <ul>
+  - ConfigMap to define variables for Wordpress deployment in a dynamic rather than a static way.
+  </ul> </details>
+    <details> <summary>Wordpress-deployment.yaml:</summary> <ul>
+  - Main configuration file for the deployment of Wordpress database as a micro-service in kubernetes.
+  </ul> </details>
+    <details> <summary>Wordpress-service.yaml:</summary>** <ul>
+  - Configuration file to create a LoadBalancer service for internet access to Wordpress platform.
+  </ul> </details>    
+  
+
+
+---
+
 Notes:
 1. All relevant values are defined in the values.yaml file.
 2. For this project 2GB of disk space were defined for each service, for actual use you would like to define 20GB or more.
