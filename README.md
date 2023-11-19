@@ -24,6 +24,9 @@ in an easy and automated way. It is not intended to be used in production enviro
 many features like security, high availablity and scaling are absent in this release. 
 However it is a perfect base for a start or as a personal project.
 
+- Tested on AWS EKS platform.
+- Not for production environment! For testing purposes only.
+
 ## Chart architecture
 
 - **Chart.yaml:** Main chart file.
@@ -102,10 +105,9 @@ Notes:
 
 ### :bangbang: Prerequisites
 
-- Tested on AWS EKS platform.
-- Not for production environment! For testing purposes only.
-- AWS Kubernetes cluster with "Helm" installed.
-- Hosted zone in "Route53" with domain for Wordpress server
+- AWS or any other cloud based Kubernetes cluster with "Helm" installed.
+- Git installed (sudo apt/yum/dnf install git).
+- Hosted zone in "Route53" or any other domain manager, with a domain or a sub.domain defined for Wordpress server.
 
 
 ### :gear: Installation
