@@ -128,7 +128,14 @@ helm install wordpress helm-wordpress-mariadb
 
 ## :warning: License
 
-Distributed under the GPLv3 License. See LICENSE.txt for more information.
+Distributed under the Apache License 2.0 License.
+Please note that this chart includes official WordPress and MariaDB images, which have their own respective licenses. 
+See the individual image repositories for more information.
+
+WordPress: https://hub.docker.com/_/wordpress
+MariaDB: https://hub.docker.com/_/mariadb
+
+Also see the included LICENSE.txt file.
 
 ## :handshake: Contact
 
