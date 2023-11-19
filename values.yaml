@@ -7,7 +7,7 @@ appName: "wordpress" # wordpress app label
 
 mysqlImage: "mariadb" # database image here
 mysqlVolume: "mysql-persistent-storage" # database persistent volume name
-mysqlvolumeSize: "2Gi" # define volume size here
+mysqlvolumeSize: "2Gi" # define mysql volume size here
 mysqlpersistentVolumeClaim: "mysql-pv-claim" # database PVC name
 mysqlMountpath: "/var/lib/mysql" # database persistent volume mounting path
 mysqlPort: "3306" # mariadb listening port
@@ -20,7 +20,7 @@ wordpressDbuser: "root" # which user to use for wordpress
 
 wordpressImage: "wordpress:6.2.1-apache" # wordpress image
 wordpressVolume: "wordpress-persistent-storage" #
-wordpressvolumeSize: "2Gi" # define volume size here
+wordpressvolumeSize: "2Gi" # define mysql volume size here
 wordpresspersistentVolumeClaim: "wp-pv-claim"
 wordpressMountpath: "/var/www/html" # wordpress persistent volume mount path
 wordpressPort: "80" # wordpress listening port
