@@ -6,7 +6,7 @@ The Chart name is {{ .Chart.Name }}.
 Your release is named {{ .Release.Name }}.
 
 To enable access from the internet:
-1. Add "A" records in "Route53" pointing to "wordpress" LoadBalancer service.
+1. Add an "A" records in "Route53" pointing to "wordpress" LoadBalancer service.
 2. Login to Wordpress and create your website.
 3. Enjoy!!!
 
